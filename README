@@ -2,7 +2,7 @@ Para ejecutar la imagen en un contenedor de docker sólo es necesario ejecutar e
 
 Este script realiza las siguientes acciones:
 -Se autentica en dockerhub con el usuario y contraseña en la que se almacenó la imagen
--Se hace la construcción del proyecto (ejecución de comando maven)
+-Se hace la construcción del proyecto (ejecución de comando maven). Este proceso puede tardar un poco debido a que se hace la descarga de todas las dependencias del proyecto JAVA
 -Se crea el contenedor en docker
 
 Para verificar el correcto funcionamiento del servicio expuesto se debe acceder a esta URL:
@@ -10,6 +10,8 @@ Para verificar el correcto funcionamiento del servicio expuesto se debe acceder 
 http://localhost:8080/DockerService/DockerService?wsdl
 
 Esta URL muestra el contrato WSDL del servicio, mediante el cuál puede ser invocado
+
+Para detener y eliminar el contenedor se debe hacer la ejecución del archivo stop.sh
 
 
 
