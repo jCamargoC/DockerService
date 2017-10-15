@@ -1,0 +1,15 @@
+Para ejecutar la imagen en un contenedor de docker sólo es necesario ejecutar el archivo start.sh.
+
+Este script realiza las siguientes acciones:
+-Se autentica en dockerhub con el usuario y contraseña en la que se almacenó la imagen
+-Se hace la construcción del proyecto (ejecución de comando maven)
+-Se crea el contenedor en docker
+
+Para verificar el correcto funcionamiento del servicio expuesto se debe acceder a esta URL:
+
+http://localhost:8080/DockerService/DockerService?wsdl
+
+Esta URL muestra el contrato WSDL del servicio, mediante el cuál puede ser invocado
+
+
+
