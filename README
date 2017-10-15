@@ -1,4 +1,6 @@
-Para ejecutar la imagen en un contenedor de docker sólo es necesario ejecutar el archivo start.sh.
+Para ejecutar la imagen en un contenedor de docker sólo es necesario ejecutar el archivo start.sh en la consola, estando en el directorio del proyecto (DockerService)
+
+
 
 Este script realiza las siguientes acciones:
 -Se autentica en dockerhub con el usuario y contraseña en la que se almacenó la imagen
