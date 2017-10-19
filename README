@@ -1,6 +1,6 @@
 Para ejecutar la imagen en un contenedor de docker sólo es necesario ejecutar el archivo start.sh en la consola, estando en el directorio del proyecto (DockerService)
 
-
+Es importante para la ejecución del script start.sh que el directorio actual sea la raíz de este repositorio, es decir, ../DockerService
 
 Este script realiza las siguientes acciones:
 -Se autentica en dockerhub con el usuario y contraseña en la que se almacenó la imagen
@@ -11,9 +11,7 @@ Para verificar el correcto funcionamiento del servicio expuesto se debe acceder 
 
 http://localhost:8080/DockerService/DockerService?wsdl
 
-Esta URL muestra el contrato WSDL del servicio, mediante el cuál puede ser invocado
+Esta URL muestra el contrato WSDL del servicio, mediante el cuál puede ser invocado. El servicio es tipo SOAP por lo que puede ser consumido con SOAP UI
 
 Para detener y eliminar el contenedor se debe hacer la ejecución del archivo stop.sh
-
-
 
